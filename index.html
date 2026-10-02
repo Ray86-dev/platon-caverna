@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platón y la caverna · Historia de la Filosofía 2.º Bachillerato</title>
+  <meta name="description" content="Aventura interactiva para descubrir el pensamiento de Platón: de las sombras de la caverna a la luz del Sol.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23221810'/%3E%3Ccircle cx='32' cy='28' r='13' fill='%23ffd447'/%3E%3Cpath d='M8 54 Q32 30 56 54Z' fill='%23e8833a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-view="home">
+  <a class="skip" href="#app">Saltar al contenido</a>
+  <header class="top">
+    <a class="brand" href="#/" aria-label="Ir al mapa">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="13" r="7" fill="#ffd447"/><path d="M3 28 Q16 14 29 28Z" fill="#e8833a"/></svg>
+      <span>Platón <em>y la caverna</em></span>
+    </a>
+    <div class="sun" title="Tu luz: progreso total">
+      <span class="sun-l">Luz</span>
+      <div class="sun-track"><i id="sunFill"></i></div>
+      <b id="lightPct">0%</b>
+    </div>
+    <nav class="tools">
+      <button id="btnGloss" type="button" class="tool">📖 <span>Glosario</span></button>
+      <button id="btnNotes" type="button" class="tool">📓 <span>Cuaderno</span></button>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div id="scrim" class="scrim"></div>
+  <aside id="drawer" class="drawer" aria-hidden="true" aria-labelledby="drawerTitle">
+    <div class="drawer-h"><h2 id="drawerTitle"></h2><button id="drawerClose" type="button" class="close" aria-label="Cerrar">✕</button></div>
+    <div id="drawerBody" class="drawer-b"></div>
+  </aside>
+
+  <noscript><p style="padding:2rem">Esta aventura necesita JavaScript.</p></noscript>
+  <script src="js/glossary.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
