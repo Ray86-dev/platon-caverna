@@ -1,5 +1,7 @@
 # Platón y la caverna · Web interactiva (2.º Bachillerato)
 
+> **In English:** An interactive web adventure through Plato's philosophy for final-year secondary students, in seven stations with questions, challenges and a final test. Plain JavaScript, no server; progress stays in the student's browser. [Open it](https://ray86-dev.github.io/platon-caverna/).
+
 Aventura interactiva basada en la **Unidad 1** (Los orígenes de la filosofía. El idealismo de Platón).
 El alumnado "sale de la caverna" a través de 7 estaciones; la barra de **Luz** de la cabecera sube con su progreso.
 
